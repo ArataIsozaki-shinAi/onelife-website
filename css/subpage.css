@@ -29,12 +29,23 @@
 }
 
 .page-header .section-label {
-  color: var(--color-primary);
+  display: block;
+  color: #fff;
+  font-family: var(--font-en-sans);
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .page-header .section-title {
-  color: #fff;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-jp);
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  font-weight: 500;
+  letter-spacing: 0.3em;
 }
 
 /* Page Body */
