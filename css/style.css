@@ -1428,6 +1428,13 @@ img.biz-card-img {
     padding: 0 20px;
   }
 
+  .header,
+  .header.is-scrolled {
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+
   .about-numbers {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
