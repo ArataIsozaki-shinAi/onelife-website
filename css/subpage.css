@@ -137,6 +137,34 @@
   margin-bottom: 32px;
 }
 
+/* Page section divider (for combined pages) */
+.page-section-divider {
+  margin: 100px 0 60px;
+  padding-top: 80px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.page-section-divider .section-label {
+  display: block;
+  font-family: var(--font-en-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--color-primary-dark);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.page-section-title {
+  font-family: var(--font-jp);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-black);
+  margin: 0;
+}
+
 /* MVV Blocks */
 .mvv-block {
   margin-bottom: 48px;
