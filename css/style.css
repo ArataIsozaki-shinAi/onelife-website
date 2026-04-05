@@ -725,10 +725,10 @@ img {
 
 .message-split {
   display: grid;
-  grid-template-columns: minmax(280px, 42%) 1fr;
+  grid-template-columns: minmax(320px, 45%) 1fr;
   align-items: stretch;
-  min-height: 420px;
-  max-width: 1200px;
+  min-height: 480px;
+  max-width: 1400px;
   margin: 0 auto;
   transition: transform 0.5s var(--ease-out-expo);
 }
@@ -742,7 +742,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 50px;
+  padding: 80px clamp(40px, 6vw, 90px);
   background: var(--color-bg);
   transition: background-color 0.5s ease;
 }
@@ -753,12 +753,12 @@ img {
 
 .message-split-title {
   font-family: var(--font-en-sans);
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
-  font-weight: 300;
-  letter-spacing: 0.04em;
-  line-height: 1.1;
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
   color: var(--color-black);
-  margin: 0 0 24px;
+  margin: 0 0 32px;
   transition: color 0.5s ease;
 }
 
@@ -802,10 +802,13 @@ img {
     min-height: auto;
   }
   .message-split-text {
-    padding: 0 0 30px;
+    padding: 50px 32px;
+  }
+  .message-split-title {
+    font-size: clamp(2.2rem, 11vw, 3.6rem);
   }
   .message-split-image {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
   }
 }
 
