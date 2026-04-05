@@ -344,7 +344,7 @@ img {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,25 +378,28 @@ img {
 }
 
 .hero-logo {
-  margin-bottom: 40px;
+  margin-bottom: -8%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-logo-img {
-  height: clamp(80px, 14vw, 140px);
-  width: auto;
+  width: min(70vh, 92vw, 1200px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   opacity: 0.9;
 }
 
 .hero-catch-jp {
   font-family: var(--font-jp);
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
-  font-weight: 700;
+  font-size: clamp(0.85rem, 1.8vw, 1.3rem);
+  font-weight: 500;
   color: var(--color-black);
   letter-spacing: 0.15em;
   line-height: 1.6;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .hero-scroll {
