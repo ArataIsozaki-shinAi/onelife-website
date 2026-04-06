@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "onelife-site",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "/Users/arata/Desktop/OneLife", "-l", "8090", "--no-clipboard"],
+      "name": "OneLife",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "export PATH=/opt/homebrew/bin:$PATH && npx serve /Users/arata/Desktop/OneLife -l 8090 --no-clipboard"],
       "port": 8090
     }
   ]
