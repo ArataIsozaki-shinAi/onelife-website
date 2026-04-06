@@ -724,7 +724,7 @@ img {
 
 .message-split {
   display: grid;
-  grid-template-columns: minmax(320px, 45%) 1fr;
+  grid-template-columns: minmax(320px, 55%) 1fr;
   align-items: stretch;
   min-height: 480px;
   max-width: 1400px;
@@ -744,6 +744,7 @@ img {
   padding: 80px clamp(40px, 6vw, 90px);
   background: var(--color-bg);
   transition: background-color 0.5s ease;
+  overflow: hidden;
 }
 
 .message-split:hover .message-split-text {
@@ -752,7 +753,7 @@ img {
 
 .message-split-title {
   font-family: var(--font-en-sans);
-  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-size: clamp(2.8rem, 3.8vw, 3.5rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.05;
@@ -804,7 +805,7 @@ img {
     padding: 50px 32px;
   }
   .message-split-title {
-    font-size: clamp(2.2rem, 11vw, 3.6rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
   }
   .message-split-image {
     aspect-ratio: 4 / 3;
