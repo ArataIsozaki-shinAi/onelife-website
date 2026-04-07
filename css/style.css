@@ -1241,7 +1241,7 @@ img.biz-card-img {
 
 /* --- Company Section --- */
 .section-company {
-  background: var(--color-bg-section);
+  background: #fff;
 }
 
 .company-table {
