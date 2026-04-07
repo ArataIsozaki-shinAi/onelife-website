@@ -285,10 +285,27 @@
   line-height: 1.8;
 }
 
+.company-history .company-detail-row {
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+}
+
+.company-history .company-detail-row dt {
+  font-family: var(--font-en-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+}
+
 @media (max-width: 767px) {
   .company-detail-row {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+  .company-history .company-detail-row {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
   }
 }
 
