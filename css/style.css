@@ -578,12 +578,13 @@ img {
 
 .centered-heading-title {
   font-family: var(--font-en-sans);
-  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  font-size: clamp(1.8rem, 5.5vw, 4.5rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.1;
   color: var(--color-black);
   margin: 0 0 28px;
+  white-space: nowrap;
 }
 
 .centered-heading-sub {
