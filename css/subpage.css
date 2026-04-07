@@ -316,8 +316,7 @@
 /* Business Detail Hero Image */
 .biz-detail-hero {
   width: 100%;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
+  height: auto;
   display: block;
   margin-bottom: 48px;
 }
