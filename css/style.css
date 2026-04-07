@@ -1359,6 +1359,11 @@ img.biz-card-img {
   line-height: 1.6;
 }
 
+.footer-nav-heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .footer-nav ul {
   display: flex;
   flex-direction: column;
