@@ -54,7 +54,7 @@
   padding: 0;
   text-align: left;
   min-height: 0;
-  height: 80vh;
+  height: 100vh;
 }
 
 .page-header-business::before {
@@ -63,7 +63,7 @@
 
 .page-header-business .page-header-inner {
   display: flex;
-  height: 80vh;
+  height: 100vh;
 }
 
 .page-header-business .page-header-text {
@@ -108,9 +108,9 @@
 
 .page-header-business .page-header-image {
   width: 60%;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .page-header-business .page-header-image img {
@@ -366,6 +366,95 @@
     max-width: 100%;
     width: 100%;
   }
+}
+
+/* Business Detail Links */
+.biz-detail-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.biz-detail-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-en-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--color-black);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.biz-detail-link:hover {
+  color: var(--color-primary);
+}
+
+.biz-detail-link-arrow {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: currentColor;
+  margin-left: 12px;
+  position: relative;
+}
+
+.biz-detail-link-arrow::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+
+/* Event History */
+.event-history {
+  max-width: 100%;
+}
+
+.event-history-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 32px;
+  color: var(--color-black);
+}
+
+.event-history-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-history-item {
+  display: flex;
+  gap: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.event-history-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.event-history-item dt {
+  font-family: var(--font-en-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.event-history-item dd {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.8;
 }
 
 .mvv-block {
