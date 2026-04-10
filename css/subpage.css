@@ -119,6 +119,45 @@
   object-fit: cover;
 }
 
+.page-header-business .page-header-image-contain {
+  background: #fff;
+}
+
+.page-header-business .page-header-image-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
+/* Coming Soon */
+.coming-soon {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.coming-soon-label {
+  font-family: var(--font-en-sans);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.coming-soon-text {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--color-gray);
+}
+
+@media (max-width: 767px) {
+  .coming-soon {
+    padding: 80px 20px;
+  }
+  .coming-soon-text {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .page-header-business {
     min-height: auto;
