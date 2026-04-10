@@ -514,6 +514,16 @@
 
 .ceo-signature {
   margin-top: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.ceo-signature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -538,6 +548,26 @@
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+
+.ceo-signature-img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: -70px;
+  margin-left: -40px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .ceo-signature-img {
+    height: 130px;
+    margin-bottom: -50px;
+    margin-left: -28px;
+  }
+  .ceo-signature {
+    gap: 2px;
+  }
 }
 
 /* Company Detail Table */
