@@ -514,10 +514,7 @@
 
 .ceo-signature {
   margin-top: 48px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 4px;
+  text-align: right;
 }
 
 .ceo-signature-text {
@@ -551,22 +548,20 @@
 }
 
 .ceo-signature-img {
-  height: 180px;
+  display: block;
+  height: 220px;
   width: auto;
   object-fit: contain;
-  margin-bottom: -70px;
-  margin-left: -40px;
-  flex-shrink: 0;
+  margin-left: auto;
+  margin-top: -70px;
+  margin-bottom: -60px;
 }
 
 @media (max-width: 767px) {
   .ceo-signature-img {
-    height: 130px;
-    margin-bottom: -50px;
-    margin-left: -28px;
-  }
-  .ceo-signature {
-    gap: 2px;
+    height: 150px;
+    margin-top: -50px;
+    margin-bottom: -40px;
   }
 }
 
