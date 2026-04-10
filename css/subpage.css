@@ -122,11 +122,13 @@
 @media (max-width: 768px) {
   .page-header-business {
     min-height: auto;
+    height: auto;
   }
 
   .page-header-business .page-header-inner {
     flex-direction: column-reverse;
     min-height: auto;
+    height: auto;
   }
 
   .page-header-business .page-header-text {
@@ -136,8 +138,10 @@
 
   .page-header-business .page-header-image {
     width: 100%;
+    height: auto;
     min-height: 50vw;
     max-height: 400px;
+    padding-top: 80px;
   }
 
   .page-header-business .section-label {
