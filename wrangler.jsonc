@@ -1,6 +1,10 @@
 {
   "name": "onelife-website",
   "compatibility_date": "2026-04-07",
+  "routes": [
+    { "pattern": "onelifegroup.net", "custom_domain": true },
+    { "pattern": "www.onelifegroup.net", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./"
   }

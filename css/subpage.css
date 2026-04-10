@@ -682,6 +682,31 @@
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .contact-page-lead {
+    font-size: 0.85rem;
+    line-height: 2;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+  .contact-page-lead br {
+    display: none;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-submit {
+    margin-top: 36px;
+  }
+  .form-submit-btn {
+    padding: 16px 48px;
+    width: 100%;
+  }
+}
+
 .contact-form {
   max-width: 640px;
   margin: 0 auto;

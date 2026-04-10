@@ -991,7 +991,7 @@ img {
 
 /* --- News Section --- */
 .section-news {
-  background: var(--color-bg-section);
+  background: #fff;
 }
 
 .news-list {
