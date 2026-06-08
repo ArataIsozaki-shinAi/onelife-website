@@ -157,4 +157,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', highlightNav, { passive: true });
+
+  // --- Contact Form (mailto fallback) ---
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = (document.getElementById('name')?.value || '').trim();
+      const company = (document.getElementById('company')?.value || '').trim();
+      const email = (document.getElementById('email')?.value || '').trim();
+      const phone = (document.getElementById('phone')?.value || '').trim();
+      const message = (document.getElementById('message')?.value || '').trim();
+
+      const subject = `【お問い合わせ】${name}様${company ? '（' + company + '）' : ''}`;
+      const body =
+        `お名前：${name}\n` +
+        `会社名：${company}\n` +
+        `メールアドレス：${email}\n` +
+        `電話番号：${phone}\n\n` +
+        `お問い合わせ内容：\n${message}\n`;
+
+      const mailto = `mailto:info@onelifegroup.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  }
 });
